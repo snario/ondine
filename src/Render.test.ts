@@ -32,7 +32,7 @@ describe('render', () => {
     expect(bars).toMatchInlineSnapshot(`
       [
         "<g class="ondine-series ondine-bars" data-id="up" fill="var(--ondine-series-1,color-mix(in srgb,var(--_fg) 100%,var(--_bg)))"><rect x="78.27" y="203.2" width="202.86" height="173.2"/><rect x="368.07" y="116.6" width="202.86" height="259.8"/></g>",
-        "<g class="ondine-series ondine-bars" data-id="down" fill="var(--ondine-series-2,color-mix(in srgb,var(--_fg) 57%,var(--_bg)))"><rect x="78.27" y="376.4" width="202.86" height="86.6"/><rect x="368.07" y="30" width="202.86" height="85.6"/></g>",
+        "<g class="ondine-series ondine-bars" data-id="down" fill="var(--ondine-series-2,color-mix(in srgb,var(--_fg) 35%,var(--_bg)))"><rect x="78.27" y="376.4" width="202.86" height="86.6"/><rect x="368.07" y="30" width="202.86" height="85.6"/></g>",
       ]
     `)
     expect(totals).toMatchInlineSnapshot(
@@ -50,7 +50,7 @@ describe('render', () => {
     const titles = result.svg.match(/<g class="ondine-axis-titles".*?<\/g><\/g>/)?.[0]
 
     expect(line).toMatchInlineSnapshot(
-      `"<g class="ondine-series ondine-line" data-id="rate" fill="var(--ondine-series-2,color-mix(in srgb,var(--_fg) 57%,var(--_bg)))"><path d="M170.45,240.75L424.95,18.5" fill="none" stroke="var(--ondine-series-2,color-mix(in srgb,var(--_fg) 57%,var(--_bg)))" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="170.45" cy="240.75" r="3"/><circle cx="424.95" cy="18.5" r="3"/></g>"`,
+      `"<g class="ondine-series ondine-line" data-id="rate" fill="var(--ondine-series-2,color-mix(in srgb,var(--_fg) 35%,var(--_bg)))"><path d="M170.45,240.75L424.95,18.5" fill="none" stroke="var(--ondine-series-2,color-mix(in srgb,var(--_fg) 35%,var(--_bg)))" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="170.45" cy="240.75" r="3"/><circle cx="424.95" cy="18.5" r="3"/></g>"`,
     )
     expect(titles).toMatchInlineSnapshot(
       `"<g class="ondine-axis-titles" font-size="14"><g transform="translate(595.5,240.75) rotate(90)"><text x="0" y="4.9" text-anchor="middle">Rate</text></g></g>"`,
