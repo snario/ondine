@@ -1,5 +1,16 @@
 # ondine
 
+## 0.1.0
+
+### Minor Changes
+
+- 4e9b527: Added the `rightAxis` option of `xyChart`, which measures the named series of an XY chart against a second value axis.
+- 4e9b527: Added the `stacked` option of `xyChart`, which draws all bar series of an XY chart as one stacked bar per category.
+
+### Patch Changes
+
+- 0b589ec: Added Pele's copyright and license notice to the published `LICENSE`.
+
 ## 0.0.3
 
 ### Patch Changes
